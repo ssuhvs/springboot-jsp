@@ -22,7 +22,7 @@ public class MainController {
     @Autowired
     private TaskService taskService;
 
-    @GetMapping(value = "/")
+    @RequestMapping(value = "/")
     public String allTasks(HttpServletRequest request){
         request.setAttribute("tasks", taskService.findAll());
         request.setAttribute("mode", "MODE_TASKS");
@@ -44,7 +44,7 @@ public class MainController {
         return "index";
     }
 
-    @GetMapping(value = "/delete")
+    @RequestMapping(value = "/delete")
     public String delete(@RequestParam long id, HttpServletRequest request) {
         taskService.delete(id);
         request.setAttribute("tasks", taskService.findAll());
