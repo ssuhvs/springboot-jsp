@@ -1,4 +1,4 @@
-package com.lostad.app.conf;
+package com.lostad.app.secure.intercepter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

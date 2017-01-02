@@ -1,4 +1,4 @@
-package com.lostad.app.core.util;
+package com.lostad.app.secure.util;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;
